@@ -1,0 +1,54 @@
+html.snake-mobile,
+html.snake-mobile body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #578a34;
+  overscroll-behavior: none;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html.snake-mobile .m6tB9e {
+  position: fixed;
+  inset: 0;
+}
+
+html.snake-mobile .m6tB9e > div.EjCLSb {
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  transform: none !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+html.snake-mobile .EjCLSb .jNB0Ic {
+  aspect-ratio: auto !important;
+  width: 100% !important;
+}
+
+html.snake-mobile .EjCLSb .atsE1,
+html.snake-mobile .EjCLSb [aria-label="Toggle fullscreen"],
+html.snake-mobile .EjCLSb [aria-label="End game"] {
+  display: none !important;
+}
+
+html.snake-mobile .EjCLSb .O6HIqc {
+  cursor: pointer;
+  z-index: 1002;
+  bottom: 14px;
+  right: 14px;
+}
+
+html.snake-desktop #snake-mobile-pad,
+html.snake-desktop #snake-mobile-toggle,
+html.snake-desktop .t6jjTb {
+  display: none !important;
+}
