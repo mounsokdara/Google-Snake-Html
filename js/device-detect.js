@@ -23,12 +23,16 @@
     var m = query("mode");
 
     if (m === "mobile" || m === "desktop") {
-      try { localStorage.setItem("snake_mode", m); } catch (e) {}
+      try {
+        localStorage.setItem("snake_mode", m);
+      } catch (e) {}
       return m;
     }
 
     if (m === "auto") {
-      try { localStorage.removeItem("snake_mode"); } catch (e) {}
+      try {
+        localStorage.removeItem("snake_mode");
+      } catch (e) {}
       return null;
     }
 
@@ -51,7 +55,8 @@
     if (/Android|iPhone|iPad|iPod|Mobile|Silk|Opera Mini|IEMobile/i.test(ua)) return "mobile";
 
     // iPadOS reports a Mac UA; real Macs have no touch points
-    if (/Macintosh/.test(ua) && (n.maxTouchPoints || 0) > 1 && media("(pointer:coarse)")) return "mobile";
+    if (/Macintosh/.test(ua) && (n.maxTouchPoints || 0) > 1 && media("(pointer:coarse)"))
+      return "mobile";
 
     // Everything else (desktop PCs, touch laptops, "Desktop site" mode) = desktop: small UI, no joystick
     return "desktop";
