@@ -593,7 +593,7 @@ html.snake-mobile .rNjvu {
   display: block !important;
 }
 .XMG4af {
-  background-image: url(https://www.google.com/logos/fnbx/snake_arcade/end_empty.png);
+  background-image: url(../../assets/common/end_empty.png);
   background-position-y: calc(100% + 28px);
   background-repeat: no-repeat;
 }
