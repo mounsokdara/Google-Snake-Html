@@ -977,21 +977,21 @@ var fn_50 = function (first_arg, second_arg, third_arg) {
         switch (second_arg) {
           default:
           case 0:
-            return "assets/apples-and-graphics/apple_04.png";
+            return "assets/apples-and-graphics/pumpkin.png";
           case 1:
-            return "assets/pixel/apples/px_apple_04.png";
+            return "assets/pixel/apples/px_pumpkin.png";
           case 2:
-            return "assets/real/apples/apple_04.png";
+            return "assets/real/apples/pumpkin.png";
         }
-      first_arg = fn_52(first_arg);
+      first_arg = AssetNames.apple[first_arg];
       switch (second_arg) {
         default:
         case 0:
-          return `assets/apples-and-graphics/apple_${first_arg}.png`;
+          return `assets/apples-and-graphics/${first_arg}.png`;
         case 1:
-          return `assets/pixel/apples/px_apple_${first_arg}.png`;
+          return `assets/pixel/apples/px_${first_arg}.png`;
         case 2:
-          return `assets/real/apples/apple_${first_arg}.png`;
+          return `assets/real/apples/${first_arg}.png`;
       }
     };
 var fn_51 = function (first_arg) {
@@ -11905,8 +11905,7 @@ var fn_272 = function (first_arg, second_arg, third_arg) {
       second_arg &&
         (first_arg.settings.oc = `${fn_50(first_arg.settings.Mb, first_arg.settings.Ba, first_arg.settings.Vb)}`);
       third_arg &&
-        ((second_arg = fn_52(first_arg.settings.yb)),
-        (first_arg.settings.hc = `${first_arg.settings.Ba === 1 ? `assets/trophies/trophy_${second_arg}.png` : `assets/trophies/trophy_${second_arg}.png`}`));
+        ((first_arg.settings.hc = AssetNames.trophy(first_arg.settings.yb)));
     };
 var fn_273 = function (first_arg) {
       var local_44 = first_arg.oa?.n6b;
@@ -12057,24 +12056,24 @@ var fn_279 = function (first_arg) {
         ? (fn_53(
             first_arg.yb,
             num_33
-              ? "assets/counts-and-keys/count_04.png"
-              : "assets/counts-and-keys/count_04.png"
+              ? "assets/counts-and-keys/count_dice.png"
+              : "assets/counts-and-keys/count_dice.png"
           ),
           namespace.Rd(first_arg.yb, "LaTyvd"))
         : num_31
           ? (fn_53(
               first_arg.rb,
               num_33
-                ? "assets/counts-and-keys/count_05.png"
-                : "assets/counts-and-keys/count_05.png"
+                ? "assets/counts-and-keys/count_bomb.png"
+                : "assets/counts-and-keys/count_bomb.png"
             ),
             namespace.Rd(first_arg.rb, "LaTyvd"))
           : num_32 &&
             (fn_53(
               first_arg.wb,
               num_33
-                ? "assets/counts-and-keys/count_06.png"
-                : "assets/counts-and-keys/count_06.png"
+                ? "assets/counts-and-keys/count_tally.png"
+                : "assets/counts-and-keys/count_tally.png"
             ),
             namespace.Rd(first_arg.wb, "LaTyvd"));
       if (first_arg.settings.Ca === 0 || num_30 || num_31)
@@ -12322,7 +12321,7 @@ var fn_292 = function (first_arg, element) {
         element.appendChild(element_2);
         fn_53(
           element_2,
-          `${`assets/trophies/trophy_${fn_52(local_44)}.png`}`
+          AssetNames.trophy(local_44)
         );
         namespace.Pd(element_2, "fbftZe");
       }
@@ -12330,13 +12329,13 @@ var fn_292 = function (first_arg, element) {
       element.appendChild(local_44);
       fn_53(
         local_44,
-        `${`assets/counts-and-keys/count_${fn_52(first_arg.Q5b)}.png`}`
+        AssetNames.count(first_arg.Q5b)
       );
       namespace.Pd(local_44, "fbftZe");
       first_arg.I6b === 1 &&
         ((first_arg = document.createElement("img")),
         element.appendChild(first_arg),
-        fn_53(first_arg, "assets/sizes/size_01.png"),
+        fn_53(first_arg, "assets/sizes/size_small.png"),
         namespace.Pd(first_arg, "fbftZe"));
       if (element.children.length >= 5)
         for (let local_45 of element.children) namespace.Pd(local_45, "OZ9aHc");
@@ -12623,17 +12622,17 @@ var cls_63 = class {
         );
         this.kb = new cls_21(
           this.settings,
-          "assets/speeds-and-endings/speed_01.png",
+          "assets/speeds-and-endings/speed_fast.png",
           1,
           this.Ca,
-          "assets/pixel/px_speed_01.png"
+          "assets/pixel/px_speed_fast.png"
         );
         this.Mb = new cls_21(
           this.settings,
-          "assets/speeds-and-endings/speed_02.png",
+          "assets/speeds-and-endings/speed_slow.png",
           1,
           this.Ca,
-          "assets/pixel/px_speed_02.png"
+          "assets/pixel/px_speed_slow.png"
         );
         this.Oa = fifth_arg;
         this.Ya = sixth_arg;
@@ -12651,7 +12650,7 @@ var cls_63 = class {
                   element_2.children[4] instanceof HTMLImageElement &&
                   fn_53(
                     element_2.children[4],
-                    "assets/apples-and-graphics/apple_04.png"
+                    "assets/apples-and-graphics/pumpkin.png"
                   );
                 break;
               }
