@@ -977,7 +977,7 @@ var fn_50 = function (first_arg, second_arg, third_arg) {
         switch (second_arg) {
           default:
           case 0:
-            return "assets/apples-and-graphics/pumpkin.png";
+            return "assets/fruits-and-graphics/pumpkin.png";
           case 1:
             return "assets/pixel/apples/px_pumpkin.png";
           case 2:
@@ -987,7 +987,7 @@ var fn_50 = function (first_arg, second_arg, third_arg) {
       switch (second_arg) {
         default:
         case 0:
-          return `assets/apples-and-graphics/${first_arg}.png`;
+          return `assets/fruits-and-graphics/${first_arg}.png`;
         case 1:
           return `assets/pixel/apples/px_${first_arg}.png`;
         case 2:
@@ -12650,7 +12650,7 @@ var cls_63 = class {
                   element_2.children[4] instanceof HTMLImageElement &&
                   fn_53(
                     element_2.children[4],
-                    "assets/apples-and-graphics/pumpkin.png"
+                    "assets/fruits-and-graphics/pumpkin.png"
                   );
                 break;
               }
