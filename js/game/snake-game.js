@@ -981,7 +981,7 @@ var fn_50 = function (first_arg, second_arg, third_arg) {
           case 1:
             return "assets/pixel/apples/px_pumpkin.png";
           case 2:
-            return "assets/real/apples/pumpkin.png";
+            return "assets/apples-and-graphics/pumpkin.png";
         }
       first_arg = AssetNames.apple[first_arg];
       switch (second_arg) {
@@ -991,7 +991,7 @@ var fn_50 = function (first_arg, second_arg, third_arg) {
         case 1:
           return `assets/pixel/apples/px_${first_arg}.png`;
         case 2:
-          return `assets/real/apples/${first_arg}.png`;
+          return `assets/apples-and-graphics/${first_arg}.png`;
       }
     };
 var fn_51 = function (first_arg) {
